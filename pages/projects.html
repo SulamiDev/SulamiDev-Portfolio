@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | SulamiDev</title>
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/icon.png" alt="Icon" height="45" class="me-3">
+                <img src="../images/sulamidev-name.svg" alt="SulamiDev" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-primary-custom ms-2" href="register.html">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-light text-center">
+        <div class="container fade-up">
+            <h1 class="display-4 fw-bold">Our Work</h1>
+            <p class="lead text-secondary">A selection of projects we have delivered.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container fade-up">
+                <div class="section-title mb-4 text-start">
+                    <h2>Project Overview</h2>
+                </div>
+                
+                <div class="table-responsive mb-5">
+                    <table class="table table-custom">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Type</th>
+                                <th>Technology</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HealthConnect App</td>
+                                <td>Mobile App</td>
+                                <td>Flutter, Firebase</td>
+                                <td><span class="badge bg-dark">Completed</span></td>
+                                <td><button class="btn btn-sm btn-outline-custom view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-id="1">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>E-Commerce Platform</td>
+                                <td>Web Application</td>
+                                <td>Laravel, Vue.js</td>
+                                <td><span class="badge bg-dark">Completed</span></td>
+                                <td><button class="btn btn-sm btn-outline-custom view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-id="2">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>University Portal</td>
+                                <td>Custom System</td>
+                                <td>React, Node.js</td>
+                                <td><span class="badge bg-warning text-dark">In Progress</span></td>
+                                <td><button class="btn btn-sm btn-outline-custom view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-id="3">View Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section-title text-start mb-4">
+                    <h2>Featured Portfolio</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="custom-card p-0 overflow-hidden">
+                        <img src="../images/software.jpg" alt="Project" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Data Analytics Dashboard</h4>
+                            <p>A beautiful dashboard for data visualization.</p>
+                            <button class="btn btn-outline-custom mt-2 view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-id="4">View Details</button>
+                        </div>
+                    </div>
+                    <div class="custom-card p-0 overflow-hidden">
+                        <img src="../images/corporate.jpg" alt="Project" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Corporate Website</h4>
+                            <p>A modern website redesign for a large corporation.</p>
+                            <button class="btn btn-outline-custom mt-2 view-project-btn" data-bs-toggle="modal" data-bs-target="#projectModal" data-id="5">View Details</button>
+                        </div>
+                    </div>
+                    <img src="../images/3.jpeg" alt="Project" class="img-fluid">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal (AJAX target) -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="projectModalLabel">Project Information</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="projectModalBody">
+            <!-- Content loaded via AJAX -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-secondary">
+                    <small>&copy; 2026 SulamiDev. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+</html>

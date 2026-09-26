@@ -1,0 +1,128 @@
+/* responsive.css */
+@media (max-width: 992px) {
+    .services-grid, .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    .carousel-item img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Projects & Services stay beside each other and small */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .projects-grid .custom-card {
+        padding: 0 !important;
+    }
+    .projects-grid .p-4 {
+        padding: 10px !important;
+    }
+    .projects-grid h4 {
+        font-size: 0.9rem !important;
+        margin-bottom: 5px !important;
+    }
+    .projects-grid p {
+        font-size: 0.75rem !important;
+        margin-bottom: 8px !important;
+        line-height: 1.2;
+    }
+    .projects-grid .btn {
+        font-size: 0.7rem !important;
+        padding: 4px 8px !important;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .services-grid .custom-card {
+        padding: 15px 5px !important;
+    }
+    .services-grid .custom-card h3 {
+        font-size: 0.8rem !important;
+        margin-bottom: 5px !important;
+    }
+    .services-grid .custom-card p {
+        font-size: 0.65rem !important;
+        margin-bottom: 0 !important;
+        line-height: 1.2;
+    }
+    .services-grid .custom-card i {
+        font-size: 1.2rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    /* Hero Section Mobile Scaling */
+    .hero-title-mobile {
+        font-size: 1.4rem !important;
+    }
+    .hero-desc-mobile {
+        font-size: 0.75rem !important;
+        line-height: 1.3 !important;
+    }
+    .hero-text-mobile h3 {
+        font-size: 0.9rem !important;
+    }
+    /* Shrink Buttons for Mobile (Stacked) */
+    .hero-text-mobile .d-flex {
+        gap: 15px !important;
+        justify-content: center; /* Center buttons on mobile */
+    }
+    .hero-text-mobile .btn {
+        font-size: 0.9rem !important;
+        padding: 8px 20px !important;
+    }
+    
+    /* Shrink Navbar Logo */
+    .navbar-brand img:first-child {
+        height: 35px !important;
+    }
+    .navbar-brand img:last-child {
+        height: 25px !important;
+    }
+
+    .hero-section {
+        min-height: auto !important;
+        padding: 50px 0 30px !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .hero-section .text-start {
+        text-align: center !important; /* Center text on mobile */
+    }
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+    .carousel-item img {
+        height: 300px !important;
+    }
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .table-responsive table {
+        font-size: 0.85rem;
+        white-space: nowrap; /* Keep table on single lines and scroll horizontally */
+    }
+    .table-responsive .btn {
+        font-size: 0.7rem !important;
+        padding: 4px 10px !important;
+    }
+    section {
+        padding: 50px 0;
+    }
+    .footer-links {
+        margin-bottom: 30px;
+    }
+}

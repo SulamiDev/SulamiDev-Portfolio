@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SulamiDev | Build. Learn. Create.</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/icon.png" alt="Icon" height="45" class="me-3">
+                <img src="images/sulamidev-name.svg" alt="SulamiDev" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="pages/login.html">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-primary-custom ms-2" href="pages/register.html">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero-section">
+        <div class="container fade-up">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 text-start d-flex flex-column justify-content-center hero-text-mobile mb-4 mb-lg-0">
+                    <h3 class="mb-2 text-secondary">Hi, I am <span class="typewriter-text">SulamiDev</span></h3>
+                    <h1 class="fw-bold hero-title-mobile display-4">Build. Learn. Create.</h1>
+                    <p class="text-secondary mb-4 hero-desc-mobile lead">We build modern websites, applications and digital solutions.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="pages/services.html" class="btn btn-primary-custom">Our Services</a>
+                        <a href="pages/contact.html" class="btn btn-outline-custom">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center d-flex align-items-center justify-content-center">
+                    <img src="images/1.jpeg" alt="SulamiDev Intro" class="img-fluid" style="width: 100%; max-width: 550px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- WowSlider (Bootstrap Carousel implementation) -->
+        <section class="p-0">
+            <div class="container-fluid p-0 fade-up">
+                <div id="wowslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <a href="pages/services.html">
+                                <img src="images/webdev.jpg" class="d-block w-100" alt="Web Development" style="object-fit: cover; height: 650px;">
+                            </a>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <a href="pages/services.html">
+                                <img src="images/mobile.jpg" class="d-block w-100" alt="Mobile Development" style="object-fit: cover; height: 650px;">
+                            </a>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <a href="pages/services.html">
+                                <img src="images/website-new.jpg" class="d-block w-100" alt="New Website Development" style="object-fit: cover; height: 650px;">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#wowslider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#wowslider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview Section -->
+        <section class="bg-light">
+            <div class="container fade-up">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>What we can do for you</p>
+                </div>
+                <div class="services-grid">
+                    <div class="custom-card text-center">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>We build responsive, modern, and highly performant websites.</p>
+                    </div>
+                    <div class="custom-card text-center">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Apps</h3>
+                        <p>High-quality mobile applications for iOS and Android.</p>
+                    </div>
+                    <div class="custom-card text-center">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful and intuitive user interfaces designed for humans.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="pages/services.html" class="btn btn-outline-custom">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section>
+            <div class="container fade-up">
+                <div class="section-title">
+                    <h2>Ready to get started?</h2>
+                </div>
+                <div class="text-center">
+                    <p>Let's build something amazing together.</p>
+                    <a href="pages/contact.html" class="btn btn-primary-custom mt-3">Get in touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row fade-up">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="mb-3 d-flex align-items-center">
+                        <img src="images/icon.png" alt="Icon" height="35" class="me-2">
+                        <img src="images/sulamidev-name.svg" alt="SulamiDev" height="20">
+                    </div>
+                    <p class="text-secondary small">We build modern websites, applications and digital solutions for the modern world.</p>
+                    <div class="d-flex align-items-center gap-3 mt-3">
+                        <a href="https://wa.me/967783073833" target="_blank" class="text-dark fs-5" style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/sulamidev" target="_blank" class="text-dark fs-5" style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/sulamidev" target="_blank" class="text-dark fs-5" style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/sulamidev" target="_blank" class="text-dark fs-5" style="transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <h6 class="footer-title fw-bold">Quick Links</h6>
+                    <ul class="footer-links small list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
+                        <li><a href="pages/about.html" class="text-decoration-none text-secondary">About Us</a></li>
+                        <li><a href="pages/projects.html" class="text-decoration-none text-secondary">Projects</a></li>
+                        <li><a href="pages/contact.html" class="text-decoration-none text-secondary">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <h6 class="footer-title fw-bold">Services</h6>
+                    <ul class="footer-links small list-unstyled">
+                        <li><a href="pages/services.html" class="text-decoration-none text-secondary">Web Dev</a></li>
+                        <li><a href="pages/services.html" class="text-decoration-none text-secondary">Mobile Apps</a></li>
+                        <li><a href="pages/services.html" class="text-decoration-none text-secondary">UI/UX Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top pt-3 mt-3 text-center text-secondary">
+                <small>&copy; 2026 SulamiDev. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

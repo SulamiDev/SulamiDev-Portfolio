@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SulamiDev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header / Nav -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/icon.png" alt="Icon" height="45" class="me-3">
+                <img src="../images/sulamidev-name.svg" alt="SulamiDev" height="30">
+            </a>
+            <div class="ms-auto">
+                <a href="../index.html" class="btn btn-outline-custom btn-sm">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex align-items-center min-vh-100" style="margin-top: -70px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-8">
+                    <div class="custom-card shadow-sm border-0 p-0 overflow-hidden">
+                        <div class="row g-0" style="height: 550px;">
+                            <div class="col-md-6 d-none d-md-block h-100">
+                                <img src="../images/4.jpeg" alt="App Preview" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center h-100">
+                                <div class="p-3 p-lg-4 w-100">
+                                    <div class="text-center mb-3">
+                                        <h3 class="fw-bold fs-4">Welcome Back</h3>
+                                        <p class="text-secondary small mb-0">Please enter your details.</p>
+                                    </div>
+                                    <form id="loginForm" novalidate>
+                                        <div class="mb-2">
+                                            <label for="loginEmail" class="form-label mb-1" style="font-size: 0.85rem;">Email</label>
+                                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter your email">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="loginPassword" class="form-label mb-1" style="font-size: 0.85rem;">Password</label>
+                                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Enter your password">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                                            <label class="form-check-label text-secondary" for="rememberMe" style="font-size: 0.85rem;">Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary-custom btn-sm w-100 mb-2">Log In</button>
+                                        <div class="text-center" style="font-size: 0.85rem;">
+                                            <span class="text-secondary">Don't have an account?</span> 
+                                            <a href="register.html" class="text-dark fw-bold text-decoration-none">Sign up</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="toast-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/validation.js"></script>
+</body>
+</html>
