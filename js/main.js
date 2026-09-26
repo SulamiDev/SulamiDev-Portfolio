@@ -1,4 +1,4 @@
-﻿// main.js
+// main.js
 document.addEventListener("DOMContentLoaded", function() {
     // Scroll Animation (Fade Up) using Vanilla JS IntersectionObserver
     const fadeElements = document.querySelectorAll('.fade-up');
@@ -25,16 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Show Toast Notification helper function
     window.showToast = function(message) {
-        var toastHTML = 
+        var toastHTML = `
             <div class="toast align-items-center text-white bg-dark border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body">
-                        <i class="fas fa-check-circle me-2"></i>  + message + 
+                        <i class="fas fa-check-circle me-2"></i> ${message}
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
             </div>
-        ;
+        `;
         
         var container = document.querySelector('.toast-container');
         if (container) {
