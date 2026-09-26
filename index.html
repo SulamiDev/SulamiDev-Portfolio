@@ -6,9 +6,9 @@
     <title>SulamiDev | Build. Learn. Create.</title>
     <link rel="icon" href="images/icon.png" type="image/png">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" onerror="this.onerror=null;this.href='libs/bootstrap/bootstrap.min.css';">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" onerror="this.onerror=null;this.href='libs/fontawesome/css/all.min.css';">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -60,44 +60,84 @@
     </header>
 
     <main>
-        <!-- WowSlider (Bootstrap Carousel implementation) -->
+        <!-- Dynamic Slider Section -->
         <section class="p-0">
-            <div class="container-fluid p-0 fade-up">
-                <div id="wowslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#wowslider" data-bs-slide-to="2"></button>
+            <div class="container-fluid p-0 fade-up" id="slider-wrapper">
+                
+                <!-- ONLINE SLIDER (Bootstrap Carousel) -->
+                <div id="online-slider" style="display: none;">
+                    <div id="bootstrap-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#bootstrap-carousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#bootstrap-carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#bootstrap-carousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <a href="pages/services.html"><img src="images/webdev.jpg" class="d-block w-100" alt="Web Development" style="object-fit: cover; height: 650px;"></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="pages/services.html"><img src="images/mobile.jpg" class="d-block w-100" alt="Mobile Development" style="object-fit: cover; height: 650px;"></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <a href="pages/services.html"><img src="images/website-new.jpg" class="d-block w-100" alt="New Website Development" style="object-fit: cover; height: 650px;"></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bootstrap-carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bootstrap-carousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                     </div>
-                    <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <a href="pages/services.html">
-                                <img src="images/webdev.jpg" class="d-block w-100" alt="Web Development" style="object-fit: cover; height: 650px;">
-                            </a>
-                        </div>
-                        
-                        <!-- Slide 2 -->
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <a href="pages/services.html">
-                                <img src="images/mobile.jpg" class="d-block w-100" alt="Mobile Development" style="object-fit: cover; height: 650px;">
-                            </a>
-                        </div>
-                        
-                        <!-- Slide 3 -->
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <a href="pages/services.html">
-                                <img src="images/website-new.jpg" class="d-block w-100" alt="New Website Development" style="object-fit: cover; height: 650px;">
-                            </a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#wowslider" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#wowslider" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
                 </div>
+
+                <!-- LOCAL SLIDER (WowSlider) -->
+                <div id="local-slider" style="display: none;">
+                    <!-- Start WOWSlider.com BODY section -->
+                    <div id="wowslider-container1">
+                    <div class="ws_images"><ul>
+                        <li><img src="WowSlider/data1/images/corporate.jpg" alt="corporate" title="corporate" id="wows1_0"/></li>
+                        <li><img src="WowSlider/data1/images/mobile.jpg" alt="mobile" title="mobile" id="wows1_1"/></li>
+                        <li><img src="WowSlider/data1/images/software.jpg" alt="software" title="software" id="wows1_2"/></li>
+                        <li><a href="http://wowslider.net"><img src="WowSlider/data1/images/webdev.jpg" alt="slider" title="webdev" id="wows1_3"/></a></li>
+                        <li><img src="WowSlider/data1/images/websitenew.jpg" alt="website-new" title="website-new" id="wows1_4"/></li>
+                    </ul></div>
+                    <div class="ws_bullets"><div>
+                        <a href="#" title="corporate"><span><img src="WowSlider/data1/tooltips/corporate.jpg" alt="corporate"/>1</span></a>
+                        <a href="#" title="mobile"><span><img src="WowSlider/data1/tooltips/mobile.jpg" alt="mobile"/>2</span></a>
+                        <a href="#" title="software"><span><img src="WowSlider/data1/tooltips/software.jpg" alt="software"/>3</span></a>
+                        <a href="#" title="webdev"><span><img src="WowSlider/data1/tooltips/webdev.jpg" alt="webdev"/>4</span></a>
+                        <a href="#" title="website-new"><span><img src="WowSlider/data1/tooltips/websitenew.jpg" alt="website-new"/>5</span></a>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript carousel</a> by WOWSlider.com v9.0</div>
+                    <div class="ws_shadow"></div>
+                    </div>
+                    <!-- End WOWSlider.com BODY section -->
+                </div>
+
+                <script>
+                    var isLocal = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:');
+                    if (isLocal) {
+                        document.getElementById('local-slider').style.display = 'block';
+                        
+                        var cssLink = document.createElement('link');
+                        cssLink.rel = 'stylesheet';
+                        cssLink.href = 'WowSlider/engine1/style.css';
+                        document.head.appendChild(cssLink);
+
+                        var jqScript = document.createElement('script');
+                        jqScript.src = 'WowSlider/engine1/jquery.js';
+                        jqScript.onload = function() {
+                            var wsScript = document.createElement('script');
+                            wsScript.src = 'WowSlider/engine1/wowslider.js';
+                            wsScript.onload = function() {
+                                var sScript = document.createElement('script');
+                                sScript.src = 'WowSlider/engine1/script.js';
+                                document.body.appendChild(sScript);
+                            };
+                            document.body.appendChild(wsScript);
+                        };
+                        document.head.appendChild(jqScript);
+                    } else {
+                        document.getElementById('online-slider').style.display = 'block';
+                    }
+                </script>
             </div>
         </section>
 
@@ -190,8 +230,10 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="libs/jquery/jquery.min.js"><\/script>')</script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>typeof bootstrap !== 'undefined' || document.write('<script src="libs/bootstrap/bootstrap.bundle.min.js"><\/script>')</script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
