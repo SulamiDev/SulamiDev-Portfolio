@@ -10,7 +10,7 @@
     --hover-color: #333333; /* Dark Gray */
 }
 
-/* Scale down the entire website (Bootstrap uses rem units based on this) */
+
 html {
     font-size: 14px;
 }
@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-bottom: 1rem;
@@ -36,7 +36,7 @@ p {
     line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar-custom {
     background-color: var(--bg-color);
     border-bottom: 1px solid var(--border-color);
