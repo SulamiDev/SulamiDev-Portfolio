@@ -55,4 +55,20 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     };
+
+    // Auto-close mobile offcanvas sidebar when clicking a nav link
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    if (mobileSidebar) {
+        const sidebarLinks = mobileSidebar.querySelectorAll('.nav-link, .btn');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Offcanvas) {
+                    const bsOffcanvas = bootstrap.Offcanvas.getInstance(mobileSidebar);
+                    if (bsOffcanvas) {
+                        bsOffcanvas.hide();
+                    }
+                }
+            });
+        });
+    }
 });

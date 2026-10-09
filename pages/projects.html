@@ -18,19 +18,37 @@
                 <img src="../images/icon.png" alt="Icon" height="45" class="me-3">
                 <img src="../images/sulamidev-name.svg" alt="SulamiDev" height="30">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-3"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item"><a class="btn btn-primary-custom ms-2" href="register.html">Get Started</a></li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+                <div class="offcanvas-header d-lg-none">
+                    <a class="navbar-brand d-flex align-items-center m-0" href="../index.html">
+                        <img src="../images/icon.png" alt="Icon" height="35" class="me-2">
+                        <img src="../images/sulamidev-name.svg" alt="SulamiDev" height="24">
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav align-items-stretch align-items-lg-center ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-2 d-lg-none"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html"><i class="fas fa-cogs me-2 d-lg-none"></i>Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projects.html"><i class="fas fa-briefcase me-2 d-lg-none"></i>Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-user me-2 d-lg-none"></i>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope me-2 d-lg-none"></i>Contact</a></li>
+                        <li class="nav-item ms-lg-3"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt me-2 d-lg-none"></i>Login</a></li>
+                        <li class="nav-item d-none d-lg-block ms-lg-2"><a class="btn btn-primary-custom" href="register.html">Get Started</a></li>
+                    </ul>
+                    <div class="mobile-sidebar-footer d-lg-none">
+                        <p class="small text-secondary mb-2">Connect with us</p>
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <a href="https://wa.me/967783073833" target="_blank" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://github.com/sulamidev" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/sulamidev" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/in/sulamidev" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <small class="text-secondary">&copy; 2026 SulamiDev</small>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
